@@ -21,4 +21,3 @@ export function signInWithGitHub() {
 export function logout() {
   return auth().signOut();
 }
-© 2020 GitHub, Inc.

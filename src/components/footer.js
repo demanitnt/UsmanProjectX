@@ -11,4 +11,3 @@ function Footer() {
 }
 
 export default Footer;
-© 2020 GitHub, Inc.
