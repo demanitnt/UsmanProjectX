@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Chat from "./pages/Chat";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
+import Profile from "./pages/Profile";
 import { auth } from "./services/firebase";
 import './styles.css';
 
@@ -82,6 +83,12 @@ class App extends Component {
               path="/chat"
               authenticated={this.state.authenticated}
               component={Chat}
+            />
+             <Route exact path="/" component={Home} />
+            <PrivateRoute
+              path="/Profile"
+              authenticated={this.state.authenticated}
+              component={Profile}
             />
             <PublicRoute
               path="/signup"
